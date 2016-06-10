@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MyTestApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Sample Servlet</description>
+    <display-name>MyTestAppServlet</display-name>
+    <servlet-name>MyTestAppServlet</servlet-name>
+    <servlet-class>com.example.myproject.MyTestAppServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyTestAppServlet</servlet-name>
+    <url-pattern>/mytestapp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServlet</display-name>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>com.example.myproject.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>/empDetails</url-pattern>
+    <url-pattern>/storeEmp</url-pattern>
+    <url-pattern>/saveEmp</url-pattern>
+    <url-pattern>/updateEmp</url-pattern>
+    <url-pattern>/deleteEmp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EmployeeCURD</display-name>
+    <servlet-name>EmployeeCURD</servlet-name>
+    <servlet-class>com.example.myproject.EmployeeCURDServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeCURD</servlet-name>
+    <url-pattern>/employeeDetails</url-pattern>
+    <url-pattern>/saveEmployee</url-pattern>
+    <url-pattern>/updateEmployee</url-pattern>
+    <url-pattern>/deleteEmployee</url-pattern>
+  </servlet-mapping>
+</web-app>
